@@ -1,6 +1,6 @@
-package com.example.app.controller;
+package com.example.ecommerce.controller;
 
-import com.example.app.model.Product;
+import com.example.ecommerce.model.Product;
 import javafx.fxml.FXML;
 import javafx.scene.control.Label;
 
@@ -12,7 +12,7 @@ public class ProductController {
     private Label productPrice;
 
     public void initialize() {
-        Product product = new Product("Wireless Mouse", 25.99);
+        Product product = new Product("Wireless Mouse", 25.99, "image.png", "Electronics");
         productName.setText(product.getName());
         productPrice.setText("$" + product.getPrice());
     }

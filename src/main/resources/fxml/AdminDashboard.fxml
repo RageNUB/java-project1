@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.geometry.Insets?>
+
+<BorderPane xmlns:fx="http://javafx.com/fxml" fx:controller="com.example.ecommerce.controller.AdminDashboardController">
+    <top>
+        <Label text="Admin Dashboard" style="-fx-font-size: 22px; -fx-padding: 10;" />
+    </top>
+    <center>
+        <TableView fx:id="orderTable" prefWidth="600">
+            <columns>
+                <TableColumn fx:id="usernameCol" text="Username" />
+                <TableColumn fx:id="productCol" text="Product" />
+                <TableColumn fx:id="priceCol" text="Price" />
+                <TableColumn fx:id="quantityCol" text="Quantity" />
+                <TableColumn fx:id="dateCol" text="Date" />
+            </columns>
+        </TableView>
+    </center>
+    <bottom>
+        <Button text="Logout" onAction="#handleLogout" style="-fx-padding: 10 20;"/>
+    </bottom>
+</BorderPane>
